@@ -12,21 +12,26 @@
 
 <body>
   <main>
-    <div class="card-left">
-      <form action=""><!--action of form TBC-->
-        <label for="fullname" class="card-left_label">FULL NAME</label><br>
-        <input id="fullname" type="text" name="" class="card-left_input-fullwidth"><br>
-        <label for="email" class="card-left_label">EMAIL</label><br>
-        <input id="email" type="text" name="" class="card-left_input-halfwidth "><br>
-        <label for="msg-regarding" class="card-left_label">MESSAGE REGARDING</label><br>
-        <input id="msg-regarding" type="text" name="" class="card-left_input-halfwidth "><br>
-        <label for="msg" class="card-left_label">MESSAGE</label><br>
-        <input id="msg" type="text" name="" class="card-left_input-fullwidth"><br>
-        <button class="button">SEND MESSAGE</button>
-      </form>
+    <div class="card-container">
+      <div class="card-left">
+        <form action=""><!--action of form TBC-->
+          <label for="fullname" class="card-left_label">FULL NAME</label><br>
+          <input id="fullname" type="text" name="fullname" class="input-field-fullwidth input-field-fullname"
+            pattern="[A-Za-z] autofocus=" autofocus" required><br>
+          <label for="email" class="card-left_label">EMAIL</label><br>
+          <input id="email" type="email" name="email" class="input-field-halfwidth input-field--placeholder" required
+            placeholder="Your Email"><br>
+          <label for="message-regarding" class="card-left_label">MESSAGE REGARDING</label><br>
+          <input id="message-regarding" type="text" name="message-regarding" class="input-field-halfwidth" required><br>
+          <label for="msg" class="card-left_label">MESSAGE</label><br>
+          <input id="msg" type="text" name="message" class="input-field-fullwidth input-field--placeholder"
+            placeholder="Your Message" required><br>
+          <button class="button" required>SEND MESSAGE</button>
+        </form>
+      </div>
+      <img src="/image/hiclipart 2.png" alt="cute yellow duck">
+      <div class="card-right"></div>
     </div>
-    <img src="/image/hiclipart 2.png" alt="cute yellow duck">
-    <div class="card-right"></div>
   </main>
 </body>
 
